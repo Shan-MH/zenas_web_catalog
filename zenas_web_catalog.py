@@ -19,5 +19,5 @@ df = pandas.DataFrame(my_catalog)
 # streamlit.write(df)
 
 # put first col into a list
-color_list = df[0].values.tolist9)
+color_list = df[0].values.tolist()
 print(color_list)
