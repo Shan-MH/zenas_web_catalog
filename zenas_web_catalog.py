@@ -13,7 +13,7 @@ my_cur.execute("select color_or_style from catalog_for_website")
 my_catalog = my_cur.fetchall()
 
 # put data into dataframe 
-df = pandas.dataframe(my_catalog)
+df = pandas.DataFrame(my_catalog)
 
 # temp write the dataframe to the page to see what we're working with 
 streamlit.write(df)
