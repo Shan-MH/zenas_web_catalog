@@ -20,4 +20,12 @@ df = pandas.DataFrame(my_catalog)
 
 # put first col into a list
 color_list = df[0].values.tolist()
-print(color_list)
+# print(color_list)
+
+# put pick list so user can pick color
+option = streamlit.selectbox('Pick a sweatsuit color or style',list(color_list))
+
+# build image caption
+product_caption = 'Our warm, comfortable, ' + option + ' sweatsuit!'
+
+# use option selected to go back and get all the info from the database
